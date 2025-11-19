@@ -1,0 +1,32 @@
+minikube addons enable metrics-server #cài metric sever ( nếu mikibe,kind)
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
+
+
+🚀 DEMO HOÀN CHỈNH – Nginx + Ingress + HPA
+
+demo test :
+✔️ Triển khai Nginx
+✔️ Expose qua Ingress + Domain giả (nip.io)
+✔️ Tự động scale bằng Horizontal Pod Autoscaler (HPA)
+✔️ Test load để xem HPA tự scale Pods
+
+Demo chạy được trên:
+
+Minikube
+
+KIND
+
+K8s bất kỳ có Metrics Server + Ingress Controller
+
+Kết quả :
+
+✔️ Truy cập Nginx qua domain:
+http://nginx.127.0.0.1.nip.io
+
+✔️ HPA tự động scale Pods theo CPU
+
+✔️ Ingress route traffic → Service → Pods
+
+✔️ Demo đầy đủ cho mọi giáo trình DevOps/K8s
+phải cài metric ///
